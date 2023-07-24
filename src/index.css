@@ -1,0 +1,55 @@
+:root {
+  --text-color: rgb(231, 76, 60);
+  --background-color: rgb(231, 76, 60);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color);
+  transition-duration: 1s;
+  transition-delay: initial;
+}
+
+#quote-box {
+  border-radius: 5px;
+  max-width: 600px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+
+#new-quote,
+#tweet-quote {
+  background-color: var(--background-color);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  transition-duration: 1s;
+  transition-delay: initial;
+}
+
+#text,
+#author {
+  color: var(--text-color);
+  transition-duration: 1s;
+  transition-delay: initial;
+}
+
+#tweet-quote {
+  text-decoration: none;
+  padding: 0px;
+}
